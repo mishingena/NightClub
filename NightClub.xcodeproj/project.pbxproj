@@ -21,6 +21,7 @@
 		2364D24B1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */; };
 		2364D2531A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2364D2511A0A2AD100DDBCE0 /* InfoPlist.strings */; };
 		2364D2551A0A2AD100DDBCE0 /* NightClubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D2541A0A2AD100DDBCE0 /* NightClubTests.m */; };
+		2364D2601A0A303000DDBCE0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D25F1A0A303000DDBCE0 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2364D2501A0A2AD100DDBCE0 /* NightClubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NightClubTests-Info.plist"; sourceTree = "<group>"; };
 		2364D2521A0A2AD100DDBCE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2364D2541A0A2AD100DDBCE0 /* NightClubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NightClubTests.m; sourceTree = "<group>"; };
+		2364D25E1A0A303000DDBCE0 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		2364D25F1A0A303000DDBCE0 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				2364D23B1A0A2AD100DDBCE0 /* Main.storyboard */,
 				2364D23E1A0A2AD100DDBCE0 /* ViewController.h */,
 				2364D23F1A0A2AD100DDBCE0 /* ViewController.m */,
+				2364D25E1A0A303000DDBCE0 /* TableViewController.h */,
+				2364D25F1A0A303000DDBCE0 /* TableViewController.m */,
 				2364D2411A0A2AD100DDBCE0 /* Images.xcassets */,
 				2364D2301A0A2AD100DDBCE0 /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 				2364D2401A0A2AD100DDBCE0 /* ViewController.m in Sources */,
 				2364D23A1A0A2AD100DDBCE0 /* AppDelegate.m in Sources */,
 				2364D2361A0A2AD100DDBCE0 /* main.m in Sources */,
+				2364D2601A0A303000DDBCE0 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +462,7 @@
 				2364D25A1A0A2AD100DDBCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2364D25B1A0A2AD100DDBCE0 /* Build configuration list for PBXNativeTarget "NightClubTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				2364D25D1A0A2AD100DDBCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

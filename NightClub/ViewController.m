@@ -26,4 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startGame {
+    people = [NSMutableArray new];
+    //UIViewController *viewController = self;
+    //[viewController dismissModalViewControllerAnimated:YES];
+}
+
 @end

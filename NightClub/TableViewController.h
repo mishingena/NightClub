@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  NightClub
 //
 //  Created by itisioslab on 05.11.14.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface ViewController : UIViewController {
-    NSMutableArray *people;
-}
-
--(IBAction)startGame;
+@interface TableViewController : UITableViewController
 
 @end
