@@ -1,21 +1,20 @@
 //
-//  TableViewController.m
+//  ConfigTableViewController.m
 //  NightClub
 //
 //  Created by itisioslab on 05.11.14.
 //  Copyright (c) 2014 itisioslab. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "ConfigTableViewController.h"
 
-@interface TableViewController ()
-
+@interface ConfigTableViewController () {
+    NSArray *config;
+}
 
 @end
 
-@implementation TableViewController
-
-@synthesize people;
+@implementation ConfigTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -35,8 +34,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    //list = [NSArray arrayWithObjects:@"Best Film 1",@"Best Film 2",@"Best Film 3",@"Best Film 4", nil];
-    people = [NSMutableArray new];
+   // config = [[NSArray alloc] initWithObjects:@"Введите имя", @"Введите возраст", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,15 +56,14 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    
-    return people.count;
+    return 2;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier" forIndexPath:indexPath];
-    cell.textLabel.text = [people objectAtIndex:[indexPath row]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier2" forIndexPath:indexPath];
+    
     // Configure the cell...
     
     return cell;
@@ -121,5 +118,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+   /*
+    switch (indexPath.row) {
+        case 0:
+            <#statements#>
+            break;
+            
+        default:
+            break;
+    }*/
+}
 
 @end

@@ -1,5 +1,5 @@
 //
-//  TableViewController.h
+//  ConfigTableViewController.h
 //  NightClub
 //
 //  Created by itisioslab on 05.11.14.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface TableViewController : UITableViewController
-
-@property (strong, nonatomic) NSMutableArray *people;
-
+@interface ConfigTableViewController : UITableViewController
 
 @end
