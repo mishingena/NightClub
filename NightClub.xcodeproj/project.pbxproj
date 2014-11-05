@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2364D22A1A0A2AD100DDBCE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D2291A0A2AD100DDBCE0 /* Foundation.framework */; };
+		2364D22C1A0A2AD100DDBCE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */; };
+		2364D22E1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */; };
+		2364D2341A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2364D2321A0A2AD100DDBCE0 /* InfoPlist.strings */; };
+		2364D2361A0A2AD100DDBCE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D2351A0A2AD100DDBCE0 /* main.m */; };
+		2364D23A1A0A2AD100DDBCE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D2391A0A2AD100DDBCE0 /* AppDelegate.m */; };
+		2364D23D1A0A2AD100DDBCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2364D23B1A0A2AD100DDBCE0 /* Main.storyboard */; };
+		2364D2401A0A2AD100DDBCE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D23F1A0A2AD100DDBCE0 /* ViewController.m */; };
+		2364D2421A0A2AD100DDBCE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2364D2411A0A2AD100DDBCE0 /* Images.xcassets */; };
+		2364D2491A0A2AD100DDBCE0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D2481A0A2AD100DDBCE0 /* XCTest.framework */; };
+		2364D24A1A0A2AD100DDBCE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D2291A0A2AD100DDBCE0 /* Foundation.framework */; };
+		2364D24B1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */; };
+		2364D2531A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2364D2511A0A2AD100DDBCE0 /* InfoPlist.strings */; };
+		2364D2551A0A2AD100DDBCE0 /* NightClubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D2541A0A2AD100DDBCE0 /* NightClubTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2364D24C1A0A2AD100DDBCE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2364D21E1A0A2AD100DDBCE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2364D2251A0A2AD100DDBCE0;
+			remoteInfo = NightClub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2364D2261A0A2AD100DDBCE0 /* NightClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2364D2291A0A2AD100DDBCE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2364D2311A0A2AD100DDBCE0 /* NightClub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NightClub-Info.plist"; sourceTree = "<group>"; };
+		2364D2331A0A2AD100DDBCE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2364D2351A0A2AD100DDBCE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2364D2371A0A2AD100DDBCE0 /* NightClub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NightClub-Prefix.pch"; sourceTree = "<group>"; };
+		2364D2381A0A2AD100DDBCE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2364D2391A0A2AD100DDBCE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2364D23C1A0A2AD100DDBCE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2364D23E1A0A2AD100DDBCE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2364D23F1A0A2AD100DDBCE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2364D2411A0A2AD100DDBCE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2364D2471A0A2AD100DDBCE0 /* NightClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2364D2481A0A2AD100DDBCE0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2364D2501A0A2AD100DDBCE0 /* NightClubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NightClubTests-Info.plist"; sourceTree = "<group>"; };
+		2364D2521A0A2AD100DDBCE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2364D2541A0A2AD100DDBCE0 /* NightClubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NightClubTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2364D2231A0A2AD100DDBCE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2364D22C1A0A2AD100DDBCE0 /* CoreGraphics.framework in Frameworks */,
+				2364D22E1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */,
+				2364D22A1A0A2AD100DDBCE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2364D2441A0A2AD100DDBCE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2364D2491A0A2AD100DDBCE0 /* XCTest.framework in Frameworks */,
+				2364D24B1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */,
+				2364D24A1A0A2AD100DDBCE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2364D21D1A0A2AD100DDBCE0 = {
+			isa = PBXGroup;
+			children = (
+				2364D22F1A0A2AD100DDBCE0 /* NightClub */,
+				2364D24E1A0A2AD100DDBCE0 /* NightClubTests */,
+				2364D2281A0A2AD100DDBCE0 /* Frameworks */,
+				2364D2271A0A2AD100DDBCE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2364D2271A0A2AD100DDBCE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2364D2261A0A2AD100DDBCE0 /* NightClub.app */,
+				2364D2471A0A2AD100DDBCE0 /* NightClubTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2364D2281A0A2AD100DDBCE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2364D2291A0A2AD100DDBCE0 /* Foundation.framework */,
+				2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */,
+				2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */,
+				2364D2481A0A2AD100DDBCE0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2364D22F1A0A2AD100DDBCE0 /* NightClub */ = {
+			isa = PBXGroup;
+			children = (
+				2364D2381A0A2AD100DDBCE0 /* AppDelegate.h */,
+				2364D2391A0A2AD100DDBCE0 /* AppDelegate.m */,
+				2364D23B1A0A2AD100DDBCE0 /* Main.storyboard */,
+				2364D23E1A0A2AD100DDBCE0 /* ViewController.h */,
+				2364D23F1A0A2AD100DDBCE0 /* ViewController.m */,
+				2364D2411A0A2AD100DDBCE0 /* Images.xcassets */,
+				2364D2301A0A2AD100DDBCE0 /* Supporting Files */,
+			);
+			path = NightClub;
+			sourceTree = "<group>";
+		};
+		2364D2301A0A2AD100DDBCE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2364D2311A0A2AD100DDBCE0 /* NightClub-Info.plist */,
+				2364D2321A0A2AD100DDBCE0 /* InfoPlist.strings */,
+				2364D2351A0A2AD100DDBCE0 /* main.m */,
+				2364D2371A0A2AD100DDBCE0 /* NightClub-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2364D24E1A0A2AD100DDBCE0 /* NightClubTests */ = {
+			isa = PBXGroup;
+			children = (
+				2364D2541A0A2AD100DDBCE0 /* NightClubTests.m */,
+				2364D24F1A0A2AD100DDBCE0 /* Supporting Files */,
+			);
+			path = NightClubTests;
+			sourceTree = "<group>";
+		};
+		2364D24F1A0A2AD100DDBCE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2364D2501A0A2AD100DDBCE0 /* NightClubTests-Info.plist */,
+				2364D2511A0A2AD100DDBCE0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2364D2251A0A2AD100DDBCE0 /* NightClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2364D2581A0A2AD100DDBCE0 /* Build configuration list for PBXNativeTarget "NightClub" */;
+			buildPhases = (
+				2364D2221A0A2AD100DDBCE0 /* Sources */,
+				2364D2231A0A2AD100DDBCE0 /* Frameworks */,
+				2364D2241A0A2AD100DDBCE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NightClub;
+			productName = NightClub;
+			productReference = 2364D2261A0A2AD100DDBCE0 /* NightClub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2364D2461A0A2AD100DDBCE0 /* NightClubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2364D25B1A0A2AD100DDBCE0 /* Build configuration list for PBXNativeTarget "NightClubTests" */;
+			buildPhases = (
+				2364D2431A0A2AD100DDBCE0 /* Sources */,
+				2364D2441A0A2AD100DDBCE0 /* Frameworks */,
+				2364D2451A0A2AD100DDBCE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2364D24D1A0A2AD100DDBCE0 /* PBXTargetDependency */,
+			);
+			name = NightClubTests;
+			productName = NightClubTests;
+			productReference = 2364D2471A0A2AD100DDBCE0 /* NightClubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2364D21E1A0A2AD100DDBCE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = itisioslab;
+				TargetAttributes = {
+					2364D2461A0A2AD100DDBCE0 = {
+						TestTargetID = 2364D2251A0A2AD100DDBCE0;
+					};
+				};
+			};
+			buildConfigurationList = 2364D2211A0A2AD100DDBCE0 /* Build configuration list for PBXProject "NightClub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2364D21D1A0A2AD100DDBCE0;
+			productRefGroup = 2364D2271A0A2AD100DDBCE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2364D2251A0A2AD100DDBCE0 /* NightClub */,
+				2364D2461A0A2AD100DDBCE0 /* NightClubTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2364D2241A0A2AD100DDBCE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2364D2421A0A2AD100DDBCE0 /* Images.xcassets in Resources */,
+				2364D2341A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */,
+				2364D23D1A0A2AD100DDBCE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2364D2451A0A2AD100DDBCE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2364D2531A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2364D2221A0A2AD100DDBCE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2364D2401A0A2AD100DDBCE0 /* ViewController.m in Sources */,
+				2364D23A1A0A2AD100DDBCE0 /* AppDelegate.m in Sources */,
+				2364D2361A0A2AD100DDBCE0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2364D2431A0A2AD100DDBCE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2364D2551A0A2AD100DDBCE0 /* NightClubTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2364D24D1A0A2AD100DDBCE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2364D2251A0A2AD100DDBCE0 /* NightClub */;
+			targetProxy = 2364D24C1A0A2AD100DDBCE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2364D2321A0A2AD100DDBCE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2364D2331A0A2AD100DDBCE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2364D23B1A0A2AD100DDBCE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2364D23C1A0A2AD100DDBCE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2364D2511A0A2AD100DDBCE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2364D2521A0A2AD100DDBCE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2364D2561A0A2AD100DDBCE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2364D2571A0A2AD100DDBCE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2364D2591A0A2AD100DDBCE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NightClub/NightClub-Prefix.pch";
+				INFOPLIST_FILE = "NightClub/NightClub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2364D25A1A0A2AD100DDBCE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NightClub/NightClub-Prefix.pch";
+				INFOPLIST_FILE = "NightClub/NightClub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2364D25C1A0A2AD100DDBCE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NightClub.app/NightClub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NightClub/NightClub-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NightClubTests/NightClubTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2364D25D1A0A2AD100DDBCE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NightClub.app/NightClub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NightClub/NightClub-Prefix.pch";
+				INFOPLIST_FILE = "NightClubTests/NightClubTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2364D2211A0A2AD100DDBCE0 /* Build configuration list for PBXProject "NightClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2364D2561A0A2AD100DDBCE0 /* Debug */,
+				2364D2571A0A2AD100DDBCE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2364D2581A0A2AD100DDBCE0 /* Build configuration list for PBXNativeTarget "NightClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2364D2591A0A2AD100DDBCE0 /* Debug */,
+				2364D25A1A0A2AD100DDBCE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2364D25B1A0A2AD100DDBCE0 /* Build configuration list for PBXNativeTarget "NightClubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2364D25C1A0A2AD100DDBCE0 /* Debug */,
+				2364D25D1A0A2AD100DDBCE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2364D21E1A0A2AD100DDBCE0 /* Project object */;
+}
