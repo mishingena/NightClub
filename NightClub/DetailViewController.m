@@ -13,6 +13,7 @@
 @end
 
 @implementation DetailViewController
+@synthesize person;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.MyName.text = person.name;
+    self.MyAge.text = [NSString stringWithFormat:@"%ld", (long)person.age];
+    self.MySkill.text = person.skill;
     // Do any additional setup after loading the view.
 }
 

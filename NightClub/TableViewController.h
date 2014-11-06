@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MySingleton.h"
 #import "DetailViewController.h"
+#import "Person.h"
 
 @interface TableViewController : UITableViewController
 

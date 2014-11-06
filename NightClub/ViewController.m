@@ -27,9 +27,11 @@
 }
 
 - (IBAction)startGame {
-    //people = [NSMutableArray new];
-    //UIViewController *viewController = self;
-    //[viewController dismissModalViewControllerAnimated:YES];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //[[MySingleton sharedInstance].people addObjectsFromArray:[userDefaults objectForKey:@"people"]];
+    //NSLog(@"%lu", (unsigned long)[MySingleton sharedInstance].people.count);
+    //people = [userDefaults objectForKey:@"people"];
 }
 
 @end

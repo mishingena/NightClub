@@ -19,6 +19,8 @@
 @synthesize ageTextField;
 @synthesize nameTextField;
 
+NSString *skill;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -69,6 +71,7 @@ numberOfRowsInComponent:(NSInteger)component
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component
 {
+    skill = [dataSource objectAtIndex:row];
     return [dataSource objectAtIndex:row];
 }
 
@@ -103,7 +106,16 @@ numberOfRowsInComponent:(NSInteger)component
 - (IBAction)donePressed {
     
     if ([self check]) {
-        [[MySingleton sharedInstance].people addObject:nameTextField.text];
+        Person *person = [[Person alloc] init];
+        [person initWithName:nameTextField.text Age:[ageTextField.text integerValue] Skill:skill];
+        NSLog(@"%@", skill);
+        [[MySingleton sharedInstance].people addObject:person];
+        //NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        NSArray *people = [[NSArray alloc] initWithArray:[MySingleton sharedInstance].people];
+//        [[NSUserDefaults standardUserDefaults] setObject:people forKey:@"people"];
+        //[[NSUserDefaults standardUserDefaults] setObject:[MySingleton sharedInstance].people forKey:@"people"];
+        //[userDefaults setObject:[MySingleton sharedInstance].people forKey:@"people"];
+        
         [self.navigationController popViewControllerAnimated:YES];
     }
     

@@ -16,6 +16,7 @@ static MySingleton* _sharedInstance;
 
 
 - (id)init {
+    
     if (self = [super init]) {
         people = [NSMutableArray new];
     }

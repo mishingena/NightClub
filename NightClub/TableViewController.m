@@ -70,7 +70,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier" forIndexPath:indexPath];
-    cell.textLabel.text = [[MySingleton sharedInstance].people objectAtIndex:[indexPath row]];
+    Person *person = [[MySingleton sharedInstance].people objectAtIndex:[indexPath row]];
+    cell.textLabel.text = person.name;
     // Configure the cell...
     
     return cell;
@@ -132,7 +133,7 @@
         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
         DetailViewController *detailViewController = [[DetailViewController alloc] init];
         detailViewController = [segue destinationViewController];
-        detailViewController.obj = [[MySingleton sharedInstance].people objectAtIndex:path.row];;
+        detailViewController.person = [[MySingleton sharedInstance].people objectAtIndex:path.row];;
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     }

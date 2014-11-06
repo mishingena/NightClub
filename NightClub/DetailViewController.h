@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 @interface DetailViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *MyName;
+@property (weak, nonatomic) IBOutlet UILabel *MyAge;
+@property (weak, nonatomic) IBOutlet UILabel *MySkill;
 
-@property (strong, nonatomic) NSObject *obj;
+@property (strong, nonatomic) Person *person;
 
 
 
