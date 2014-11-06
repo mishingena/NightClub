@@ -67,7 +67,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="tYP-se-JOg" kind="push" id="BKE-f9-fad"/>
+                                    <segue destination="tYP-se-JOg" kind="push" identifier="viewIdentifier" id="BKE-f9-fad"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -86,7 +86,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Kcv-05-tJA" kind="push" identifier="editIdentifier" id="3po-lU-pD5"/>
+                                    <segue destination="Kcv-05-tJA" kind="push" identifier="addIdentifier" id="3po-lU-pD5"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -96,10 +96,11 @@
             </objects>
             <point key="canvasLocation" x="1551" y="-206"/>
         </scene>
-        <!--Detail View View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="T3W-d7-aWi">
             <objects>
-                <viewController id="tYP-se-JOg" customClass="DetailViewViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaU-D4-dRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="tYP-se-JOg" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tmy-hO-VLE"/>
                         <viewControllerLayoutGuide type="bottom" id="yvP-EI-37R"/>
@@ -109,20 +110,20 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrd-ij-QFy">
-                                <rect key="frame" x="48" y="59" width="34" height="21"/>
+                                <rect key="frame" x="20" y="114" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Возраст" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb3-d2-W9W">
-                                <rect key="frame" x="48" y="88" width="67" height="21"/>
+                                <rect key="frame" x="20" y="143" width="67" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Умею танцевать" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1d6-hG-HHt">
-                                <rect key="frame" x="48" y="117" width="131" height="21"/>
+                                <rect key="frame" x="20" y="172" width="131" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -132,7 +133,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="7MB-v2-yPg"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DaU-D4-dRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2063" y="-536"/>
         </scene>
