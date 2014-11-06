@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TableViewController.h"
+#import "MySingleton.h"
 
 @interface ConfigViewController : ViewController <UIAlertViewDelegate ,UIPickerViewDataSource, UIPickerViewDelegate>
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;

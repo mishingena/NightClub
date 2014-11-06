@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ViewController : UIViewController {
-    NSMutableArray *people;
-}
+@interface ViewController : UIViewController
 
 -(IBAction)startGame;
 

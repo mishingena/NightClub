@@ -27,7 +27,7 @@
 }
 
 - (IBAction)startGame {
-    people = [NSMutableArray new];
+    //people = [NSMutableArray new];
     //UIViewController *viewController = self;
     //[viewController dismissModalViewControllerAnimated:YES];
 }

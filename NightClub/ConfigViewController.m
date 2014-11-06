@@ -73,6 +73,7 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 -(BOOL) check {
+    if (![nameTextField.text isEqual:@"" ] && ![ageTextField.text isEqual:@""] && [ageTextField.text integerValue] > 17) return YES;
     if ([nameTextField.text isEqual:@"" ] || [ageTextField.text isEqual:@""]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ошибка"
                                                         message:[NSString stringWithFormat:@"Не все поля заполнены"]
@@ -92,7 +93,7 @@ numberOfRowsInComponent:(NSInteger)component
         [alert show];
         }
     }
-    return YES;
+    return NO;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -102,11 +103,11 @@ numberOfRowsInComponent:(NSInteger)component
 - (IBAction)donePressed {
     
     if ([self check]) {
-        [people addObject:nameTextField];
-        NSLog(@"Done");
+        [[MySingleton sharedInstance].people addObject:nameTextField.text];
+        [self.navigationController popViewControllerAnimated:YES];
     }
     
-    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 

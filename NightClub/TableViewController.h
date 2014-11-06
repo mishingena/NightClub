@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MySingleton.h"
+#import "DetailViewController.h"
 
 @interface TableViewController : UITableViewController
-
-@property (strong, nonatomic) NSMutableArray *people;
 
 
 @end

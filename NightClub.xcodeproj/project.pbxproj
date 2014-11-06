@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		230A66831A0A5C87004A0FB2 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230A66821A0A5C87004A0FB2 /* ConfigViewController.m */; };
-		230A66891A0A7D3B004A0FB2 /* MySingletone.m in Sources */ = {isa = PBXBuildFile; fileRef = 230A66881A0A7D3B004A0FB2 /* MySingletone.m */; };
+		230C6F951A0B629E00C4D85C /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6F941A0B629E00C4D85C /* MySingleton.m */; };
+		230C6F9E1A0B7ECA00C4D85C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6F9D1A0B7ECA00C4D85C /* DetailViewController.m */; };
 		2364D22A1A0A2AD100DDBCE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D2291A0A2AD100DDBCE0 /* Foundation.framework */; };
 		2364D22C1A0A2AD100DDBCE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */; };
 		2364D22E1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */; };
@@ -39,8 +40,10 @@
 /* Begin PBXFileReference section */
 		230A66811A0A5C87004A0FB2 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		230A66821A0A5C87004A0FB2 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
-		230A66871A0A7D3B004A0FB2 /* MySingletone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingletone.h; sourceTree = "<group>"; };
-		230A66881A0A7D3B004A0FB2 /* MySingletone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySingletone.m; sourceTree = "<group>"; };
+		230C6F931A0B629E00C4D85C /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySingleton.h; path = ../MySingleton.h; sourceTree = "<group>"; };
+		230C6F941A0B629E00C4D85C /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySingleton.m; path = ../MySingleton.m; sourceTree = "<group>"; };
+		230C6F9C1A0B7ECA00C4D85C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		230C6F9D1A0B7ECA00C4D85C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2364D2261A0A2AD100DDBCE0 /* NightClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2364D2291A0A2AD100DDBCE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,8 +133,10 @@
 				2364D23F1A0A2AD100DDBCE0 /* ViewController.m */,
 				2364D25E1A0A303000DDBCE0 /* TableViewController.h */,
 				2364D25F1A0A303000DDBCE0 /* TableViewController.m */,
-				230A66871A0A7D3B004A0FB2 /* MySingletone.h */,
-				230A66881A0A7D3B004A0FB2 /* MySingletone.m */,
+				230C6F931A0B629E00C4D85C /* MySingleton.h */,
+				230C6F941A0B629E00C4D85C /* MySingleton.m */,
+				230C6F9C1A0B7ECA00C4D85C /* DetailViewController.h */,
+				230C6F9D1A0B7ECA00C4D85C /* DetailViewController.m */,
 				2364D2411A0A2AD100DDBCE0 /* Images.xcassets */,
 				2364D2301A0A2AD100DDBCE0 /* Supporting Files */,
 			);
@@ -265,11 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2364D2401A0A2AD100DDBCE0 /* ViewController.m in Sources */,
-				230A66891A0A7D3B004A0FB2 /* MySingletone.m in Sources */,
+				230C6F951A0B629E00C4D85C /* MySingleton.m in Sources */,
 				2364D23A1A0A2AD100DDBCE0 /* AppDelegate.m in Sources */,
 				2364D2361A0A2AD100DDBCE0 /* main.m in Sources */,
 				230A66831A0A5C87004A0FB2 /* ConfigViewController.m in Sources */,
 				2364D2601A0A303000DDBCE0 /* TableViewController.m in Sources */,
+				230C6F9E1A0B7ECA00C4D85C /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
