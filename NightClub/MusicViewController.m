@@ -11,6 +11,7 @@
 
 @implementation MusicViewController {
     int actualNumberOfSong;
+    BOOL isNowPlay;
 }
 
 @synthesize music, nameOfMusic, genre;
@@ -27,39 +28,21 @@
 
 - (void)viewDidLoad
 {
-    music = [[NSArray alloc] initWithObjects:@"Blues - Velhas Virgens - Essa tal de tequila",
-                                            @"Electro - Death Grips - Lord of the Game",
-                                            @"Electro - The Echelon Effect - Your First Light My Eventide",
-                                            @"Hip-Hop - Death Grips - Spread Eagle Cross the Block",
-                                            @"Jazz - Gaba Kulka - Emily",
-                                            @"Pop - Blackbird Blackbird - Left To Hurt",
-                                            @"Pop - Flora Matos - Pretin",
-                                            @"Rnb - Com Truise - Slow Peels", nil];
-    
+    music = [[NSArray alloc] initWithObjects:@"Blues - Velhas Virgens - Essa tal de tequila.mp3",
+                                            @"Electro - Death Grips - Lord of the Game.mp3",
+                                            @"Electro - The Echelon Effect - Your First Light My Eventide.mp3",
+                                            @"Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3",
+                                            @"Jazz - Gaba Kulka - Emily.mp3",
+                                            @"Pop - Blackbird Blackbird - Left To Hurt.mp3",
+                                            @"Pop - Flora Matos - Pretin.mp3",
+                                            @"Rnb - Com Truise - Slow Peels.mp3", nil];
+    isNowPlay = NO;
     actualNumberOfSong = 0;
     nameOfMusic.text = [self getName:[music objectAtIndex:actualNumberOfSong]];
     genre.text = [self getGenre:[music objectAtIndex:actualNumberOfSong]];
     [super viewDidLoad];
+    [self setAudioPlayerWithSong:[music objectAtIndex:actualNumberOfSong]];
     
-    NSString *path = [NSString stringWithFormat:@"/Users/itisioslab/Documents/Gena/NightClub/NightClub/MySong.mp3"];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    
-   // NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[music objectAtIndex:actualNumberOfSong] ofType:@"mp3"]];
-    //NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@" ,[music objectAtIndex:actualNumberOfSong]] ];//, [[NSBundle mainBundle] resourcePath]]];
-    //NSLog(@"%@", url);
-	NSError *error;
-	audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-    NSLog(@"%@", url);
-    audioPlayer.numberOfLoops = -1;
-/*
-    if (audioPlayer == nil)
-		NSLog(@"%@",[error description]);
-	else
-		[audioPlayer play];
-
-    //audioPlayer.volume = 1;
-
-	//*/
     // Do any additional setup after loading the view.
     
 }
@@ -81,16 +64,44 @@
 }
 */
 
+- (void)setAudioPlayerWithSong:(NSString *)str {
+    NSString *path = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], str];
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    audioPlayer.volume = 0.5;
+}
+
 - (IBAction)nextSong {
     actualNumberOfSong = (music.count - 1 > actualNumberOfSong) ? actualNumberOfSong+1 : 0;
     nameOfMusic.text = [self getName:[music objectAtIndex:actualNumberOfSong]];
     genre.text = [self getGenre:[music objectAtIndex:actualNumberOfSong]];
+    NSLog(@"%d", actualNumberOfSong);
+    if (isNowPlay) {
+        [audioPlayer stop];
+        [self setAudioPlayerWithSong:[music objectAtIndex:actualNumberOfSong]];
+        [audioPlayer play];
+    } else {
+        [self setAudioPlayerWithSong:[music objectAtIndex:actualNumberOfSong]];
+    }
+    
+}
+
+- (IBAction)sliderChanged:(id)sender{
+    UISlider *slider = (UISlider *)sender;
+    audioPlayer.volume = slider.value;
 }
 
 - (IBAction)previousSong {
     actualNumberOfSong = (actualNumberOfSong == 0) ? music.count-1 : actualNumberOfSong-1;
     nameOfMusic.text = [self getName:[music objectAtIndex:actualNumberOfSong]];
     genre.text = [self getGenre:[music objectAtIndex:actualNumberOfSong]];
+    if (isNowPlay) {
+        [audioPlayer stop];
+        [self setAudioPlayerWithSong:[music objectAtIndex:actualNumberOfSong]];
+        [audioPlayer play];
+    } else {
+        [self setAudioPlayerWithSong:[music objectAtIndex:actualNumberOfSong]];
+    }
 }
 
 - (NSString *)getGenre:(NSString *)str {
@@ -104,15 +115,25 @@
 - (NSString *)getName:(NSString *)str {
     NSRange range = [str rangeOfString:@" "];
     NSString *result = [str substringFromIndex:range.location+3];
-    result = [result substringToIndex:(result.length)];
+    result = [result substringToIndex:(result.length-4)];
     return result;
 }
 
-- (IBAction)startStop {
-    audioPlayer.volume = 0.5;
-    [audioPlayer play];
+- (IBAction)startStop:(id)sender {
+    UIButton *button = (UIButton *)sender;
+    if (isNowPlay) {
+       // [sender setTitle:@"Stop"];
+        [audioPlayer stop];
+        isNowPlay = NO;
+        [button setTitle:@"Play" forState:UIControlStateNormal];
+    } else {
+        //[sender setTitle:@"Stop"];
+        [audioPlayer play];
+        isNowPlay = YES;
+        [button setTitle:@"Pause" forState:UIControlStateNormal];
+    }
 }
-
+/*
 - (AVAudioPlayer *)setupAudioPlayerWithFile:(NSString *)file type:(NSString *)type
 {
     // 1
@@ -132,6 +153,6 @@
     
     // 5
     return audioPlayer;
-}
+}*/
 
 @end

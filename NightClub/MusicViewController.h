@@ -10,14 +10,15 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface MusicViewController : UIViewController {
-    AVAudioPlayer *audioPlayer;
+     AVAudioPlayer *audioPlayer;
 }
 
 @property (strong, nonatomic) NSArray *music;
 
 - (IBAction)nextSong;
 - (IBAction)previousSong;
-- (IBAction)startStop;
+- (IBAction)startStop:(id)sender;
+- (IBAction)sliderChanged:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UILabel *nameOfMusic;
 @property (strong, nonatomic) IBOutlet UILabel *genre;
