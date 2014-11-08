@@ -14,14 +14,14 @@
 		230C6FA61A0D0C4F00C4D85C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230C6FA51A0D0C4F00C4D85C /* AVFoundation.framework */; };
 		230C6FA91A0D0CD900C4D85C /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6FA81A0D0CD900C4D85C /* MusicViewController.m */; };
 		230C6FB21A0D121C00C4D85C /* Blues - Velhas Virgens - Essa tal de tequila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FAA1A0D121C00C4D85C /* Blues - Velhas Virgens - Essa tal de tequila.mp3 */; };
-		230C6FB31A0D121C00C4D85C /* Electro - Death Grips - Lord of the Game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FAB1A0D121C00C4D85C /* Electro - Death Grips - Lord of the Game.mp3 */; };
-		230C6FB41A0D121C00C4D85C /* Electro - The Echelon Effect - Your First Light My Eventide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FAC1A0D121C00C4D85C /* Electro - The Echelon Effect - Your First Light My Eventide.mp3 */; };
+		230C6FB31A0D121C00C4D85C /* Electrodance - Death Grips - Lord of the Game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FAB1A0D121C00C4D85C /* Electrodance - Death Grips - Lord of the Game.mp3 */; };
+		230C6FB41A0D121C00C4D85C /* Electrodance - The Echelon Effect - Your First Light My Eventide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FAC1A0D121C00C4D85C /* Electrodance - The Echelon Effect - Your First Light My Eventide.mp3 */; };
 		230C6FB51A0D121C00C4D85C /* Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FAD1A0D121C00C4D85C /* Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3 */; };
 		230C6FB61A0D121C00C4D85C /* Jazz - Gaba Kulka - Emily.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FAE1A0D121C00C4D85C /* Jazz - Gaba Kulka - Emily.mp3 */; };
 		230C6FB71A0D121C00C4D85C /* Pop - Blackbird Blackbird - Left To Hurt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FAF1A0D121C00C4D85C /* Pop - Blackbird Blackbird - Left To Hurt.mp3 */; };
 		230C6FB81A0D121C00C4D85C /* Pop - Flora Matos - Pretin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FB01A0D121C00C4D85C /* Pop - Flora Matos - Pretin.mp3 */; };
 		230C6FB91A0D121C00C4D85C /* Rnb - Com Truise - Slow Peels.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FB11A0D121C00C4D85C /* Rnb - Com Truise - Slow Peels.mp3 */; };
-		230C6FBF1A0DFB0C00C4D85C /* drum01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FBE1A0DFB0C00C4D85C /* drum01.mp3 */; };
+		230C6FC51A0E0DCE00C4D85C /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */; };
 		2364D22A1A0A2AD100DDBCE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D2291A0A2AD100DDBCE0 /* Foundation.framework */; };
 		2364D22C1A0A2AD100DDBCE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */; };
 		2364D22E1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */; };
@@ -62,14 +62,15 @@
 		230C6FA71A0D0CD900C4D85C /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
 		230C6FA81A0D0CD900C4D85C /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		230C6FAA1A0D121C00C4D85C /* Blues - Velhas Virgens - Essa tal de tequila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Blues - Velhas Virgens - Essa tal de tequila.mp3"; path = "../Blues - Velhas Virgens - Essa tal de tequila.mp3"; sourceTree = "<group>"; };
-		230C6FAB1A0D121C00C4D85C /* Electro - Death Grips - Lord of the Game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Electro - Death Grips - Lord of the Game.mp3"; path = "../Electro - Death Grips - Lord of the Game.mp3"; sourceTree = "<group>"; };
-		230C6FAC1A0D121C00C4D85C /* Electro - The Echelon Effect - Your First Light My Eventide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Electro - The Echelon Effect - Your First Light My Eventide.mp3"; path = "../Electro - The Echelon Effect - Your First Light My Eventide.mp3"; sourceTree = "<group>"; };
+		230C6FAB1A0D121C00C4D85C /* Electrodance - Death Grips - Lord of the Game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Electrodance - Death Grips - Lord of the Game.mp3"; path = "../Electrodance - Death Grips - Lord of the Game.mp3"; sourceTree = "<group>"; };
+		230C6FAC1A0D121C00C4D85C /* Electrodance - The Echelon Effect - Your First Light My Eventide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Electrodance - The Echelon Effect - Your First Light My Eventide.mp3"; path = "../Electrodance - The Echelon Effect - Your First Light My Eventide.mp3"; sourceTree = "<group>"; };
 		230C6FAD1A0D121C00C4D85C /* Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3"; path = "../Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3"; sourceTree = "<group>"; };
 		230C6FAE1A0D121C00C4D85C /* Jazz - Gaba Kulka - Emily.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Jazz - Gaba Kulka - Emily.mp3"; path = "../Jazz - Gaba Kulka - Emily.mp3"; sourceTree = "<group>"; };
 		230C6FAF1A0D121C00C4D85C /* Pop - Blackbird Blackbird - Left To Hurt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Pop - Blackbird Blackbird - Left To Hurt.mp3"; path = "../Pop - Blackbird Blackbird - Left To Hurt.mp3"; sourceTree = "<group>"; };
 		230C6FB01A0D121C00C4D85C /* Pop - Flora Matos - Pretin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Pop - Flora Matos - Pretin.mp3"; path = "../Pop - Flora Matos - Pretin.mp3"; sourceTree = "<group>"; };
 		230C6FB11A0D121C00C4D85C /* Rnb - Com Truise - Slow Peels.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Rnb - Com Truise - Slow Peels.mp3"; path = "../Rnb - Com Truise - Slow Peels.mp3"; sourceTree = "<group>"; };
-		230C6FBE1A0DFB0C00C4D85C /* drum01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = drum01.mp3; path = ../drum01.mp3; sourceTree = "<group>"; };
+		230C6FC31A0E0DCE00C4D85C /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultViewController.h; path = ../ResultViewController.h; sourceTree = "<group>"; };
+		230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultViewController.m; path = ../ResultViewController.m; sourceTree = "<group>"; };
 		2364D2261A0A2AD100DDBCE0 /* NightClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2364D2291A0A2AD100DDBCE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				230C6FAA1A0D121C00C4D85C /* Blues - Velhas Virgens - Essa tal de tequila.mp3 */,
-				230C6FAB1A0D121C00C4D85C /* Electro - Death Grips - Lord of the Game.mp3 */,
-				230C6FAC1A0D121C00C4D85C /* Electro - The Echelon Effect - Your First Light My Eventide.mp3 */,
+				230C6FAB1A0D121C00C4D85C /* Electrodance - Death Grips - Lord of the Game.mp3 */,
+				230C6FAC1A0D121C00C4D85C /* Electrodance - The Echelon Effect - Your First Light My Eventide.mp3 */,
 				230C6FAD1A0D121C00C4D85C /* Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3 */,
 				230C6FAE1A0D121C00C4D85C /* Jazz - Gaba Kulka - Emily.mp3 */,
 				230C6FAF1A0D121C00C4D85C /* Pop - Blackbird Blackbird - Left To Hurt.mp3 */,
@@ -172,6 +173,8 @@
 				2364D23B1A0A2AD100DDBCE0 /* Main.storyboard */,
 				230C6FA71A0D0CD900C4D85C /* MusicViewController.h */,
 				230C6FA81A0D0CD900C4D85C /* MusicViewController.m */,
+				230C6FC31A0E0DCE00C4D85C /* ResultViewController.h */,
+				230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */,
 				230C6FA21A0BD04600C4D85C /* Person.h */,
 				230C6FA31A0BD04600C4D85C /* Person.m */,
 				230A66811A0A5C87004A0FB2 /* ConfigViewController.h */,
@@ -184,7 +187,6 @@
 				230C6F941A0B629E00C4D85C /* MySingleton.m */,
 				230C6F9C1A0B7ECA00C4D85C /* DetailViewController.h */,
 				230C6F9D1A0B7ECA00C4D85C /* DetailViewController.m */,
-				230C6FBE1A0DFB0C00C4D85C /* drum01.mp3 */,
 				2364D2411A0A2AD100DDBCE0 /* Images.xcassets */,
 				230C6FBD1A0DF89900C4D85C /* Sounds */,
 				2364D2301A0A2AD100DDBCE0 /* Supporting Files */,
@@ -298,13 +300,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2364D2421A0A2AD100DDBCE0 /* Images.xcassets in Resources */,
-				230C6FB31A0D121C00C4D85C /* Electro - Death Grips - Lord of the Game.mp3 in Resources */,
+				230C6FB31A0D121C00C4D85C /* Electrodance - Death Grips - Lord of the Game.mp3 in Resources */,
 				230C6FB51A0D121C00C4D85C /* Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3 in Resources */,
 				2364D2341A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */,
 				2364D23D1A0A2AD100DDBCE0 /* Main.storyboard in Resources */,
-				230C6FBF1A0DFB0C00C4D85C /* drum01.mp3 in Resources */,
 				230C6FB81A0D121C00C4D85C /* Pop - Flora Matos - Pretin.mp3 in Resources */,
-				230C6FB41A0D121C00C4D85C /* Electro - The Echelon Effect - Your First Light My Eventide.mp3 in Resources */,
+				230C6FB41A0D121C00C4D85C /* Electrodance - The Echelon Effect - Your First Light My Eventide.mp3 in Resources */,
 				230C6FB71A0D121C00C4D85C /* Pop - Blackbird Blackbird - Left To Hurt.mp3 in Resources */,
 				230C6FB21A0D121C00C4D85C /* Blues - Velhas Virgens - Essa tal de tequila.mp3 in Resources */,
 				230C6FB61A0D121C00C4D85C /* Jazz - Gaba Kulka - Emily.mp3 in Resources */,
@@ -330,6 +331,7 @@
 				2364D2401A0A2AD100DDBCE0 /* ViewController.m in Sources */,
 				230C6F951A0B629E00C4D85C /* MySingleton.m in Sources */,
 				230C6FA41A0BD04600C4D85C /* Person.m in Sources */,
+				230C6FC51A0E0DCE00C4D85C /* ResultViewController.m in Sources */,
 				230C6FA91A0D0CD900C4D85C /* MusicViewController.m in Sources */,
 				2364D23A1A0A2AD100DDBCE0 /* AppDelegate.m in Sources */,
 				2364D2361A0A2AD100DDBCE0 /* main.m in Sources */,

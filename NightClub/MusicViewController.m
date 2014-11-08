@@ -29,8 +29,8 @@
 - (void)viewDidLoad
 {
     music = [[NSArray alloc] initWithObjects:@"Blues - Velhas Virgens - Essa tal de tequila.mp3",
-                                            @"Electro - Death Grips - Lord of the Game.mp3",
-                                            @"Electro - The Echelon Effect - Your First Light My Eventide.mp3",
+                                            @"Electrodance - Death Grips - Lord of the Game.mp3",
+                                            @"Electrodence - The Echelon Effect - Your First Light My Eventide.mp3",
                                             @"Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3",
                                             @"Jazz - Gaba Kulka - Emily.mp3",
                                             @"Pop - Blackbird Blackbird - Left To Hurt.mp3",
@@ -53,16 +53,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    ResultViewController *resultViewController = [[ResultViewController alloc] init];
+    resultViewController = [segue destinationViewController];
+    resultViewController.isNowPlay = isNowPlay;
+    NSString *g = [self getGenre:[music objectAtIndex:actualNumberOfSong]];
+    resultViewController.genre = [g substringFromIndex:6];
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 - (void)setAudioPlayerWithSong:(NSString *)str {
     NSString *path = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], str];
@@ -75,7 +81,6 @@
     actualNumberOfSong = (music.count - 1 > actualNumberOfSong) ? actualNumberOfSong+1 : 0;
     nameOfMusic.text = [self getName:[music objectAtIndex:actualNumberOfSong]];
     genre.text = [self getGenre:[music objectAtIndex:actualNumberOfSong]];
-    NSLog(@"%d", actualNumberOfSong);
     if (isNowPlay) {
         [audioPlayer stop];
         [self setAudioPlayerWithSong:[music objectAtIndex:actualNumberOfSong]];
@@ -108,7 +113,6 @@
     NSRange range = [str rangeOfString:@" "];
     NSString *result = [str substringToIndex:range.location];
     result = [NSString stringWithFormat:@"Жанр: %@", result];
-    //NSString *result = [str substringWithRange:range];
     return result;
 }
 
@@ -122,37 +126,14 @@
 - (IBAction)startStop:(id)sender {
     UIButton *button = (UIButton *)sender;
     if (isNowPlay) {
-       // [sender setTitle:@"Stop"];
         [audioPlayer stop];
         isNowPlay = NO;
         [button setTitle:@"Play" forState:UIControlStateNormal];
     } else {
-        //[sender setTitle:@"Stop"];
         [audioPlayer play];
         isNowPlay = YES;
         [button setTitle:@"Pause" forState:UIControlStateNormal];
     }
 }
-/*
-- (AVAudioPlayer *)setupAudioPlayerWithFile:(NSString *)file type:(NSString *)type
-{
-    // 1
-    NSString *path = [[NSBundle mainBundle] pathForResource:file ofType:type];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    
-    // 2
-    NSError *error;
-    
-    // 3
-    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-    
-    // 4
-    if (!audioPlayer) {
-        NSLog(@"%@",[error description]);
-    }
-    
-    // 5
-    return audioPlayer;
-}*/
 
 @end

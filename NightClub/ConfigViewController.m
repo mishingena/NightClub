@@ -108,7 +108,6 @@ numberOfRowsInComponent:(NSInteger)component
     if ([self check]) {
         Person *person = [[Person alloc] init];
         [person initWithName:nameTextField.text Age:[ageTextField.text integerValue] Skill:skill];
-        NSLog(@"%@", skill);
         [[MySingleton sharedInstance].people addObject:person];
         //NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         NSArray *people = [[NSArray alloc] initWithArray:[MySingleton sharedInstance].people];

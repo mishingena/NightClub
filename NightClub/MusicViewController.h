@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "ResultViewController.h"
+
 
 @interface MusicViewController : UIViewController {
      AVAudioPlayer *audioPlayer;
