@@ -199,11 +199,10 @@
                                     <outlet property="delegate" destination="Kcv-05-tJA" id="Dz5-qI-Ilf"/>
                                 </connections>
                             </pickerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Выберете под какую музыку ваш персонаж умеет танцевать" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yP8-QF-qun">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Выберете под какую музыку ваш персонаж умеет танцевать" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yP8-QF-qun">
                                 <rect key="frame" x="20" y="199" width="240" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
