@@ -30,7 +30,7 @@
 {
     music = [[NSArray alloc] initWithObjects:@"Blues - Velhas Virgens - Essa tal de tequila.mp3",
                                             @"Electrodance - Death Grips - Lord of the Game.mp3",
-                                            @"Electrodence - The Echelon Effect - Your First Light My Eventide.mp3",
+                                            @"Electrodance - The Echelon Effect - Your First Light My Eventide.mp3",
                                             @"Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3",
                                             @"Jazz - Gaba Kulka - Emily.mp3",
                                             @"Pop - Blackbird Blackbird - Left To Hurt.mp3",
