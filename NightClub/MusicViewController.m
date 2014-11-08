@@ -28,6 +28,10 @@
 
 - (void)viewDidLoad
 {
+    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"musicPict.png"]];
+    
+    [self.view addSubview:backgroundImage];
+    [self.view sendSubviewToBack:backgroundImage];
     music = [[NSArray alloc] initWithObjects:@"Blues - Velhas Virgens - Essa tal de tequila.mp3",
                                             @"Electrodance - Death Grips - Lord of the Game.mp3",
                                             @"Electrodance - The Echelon Effect - Your First Light My Eventide.mp3",

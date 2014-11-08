@@ -24,6 +24,7 @@
 		230C6FC51A0E0DCE00C4D85C /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */; };
 		230C6FC71A0E223B00C4D85C /* nightClub_main@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FC61A0E223B00C4D85C /* nightClub_main@2.png */; };
 		230C6FC91A0E246500C4D85C /* nightClub_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FC81A0E246500C4D85C /* nightClub_main.png */; };
+		230C6FCB1A0E270B00C4D85C /* musicPict.png in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FCA1A0E270B00C4D85C /* musicPict.png */; };
 		2364D22A1A0A2AD100DDBCE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D2291A0A2AD100DDBCE0 /* Foundation.framework */; };
 		2364D22C1A0A2AD100DDBCE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */; };
 		2364D22E1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */; };
@@ -75,6 +76,7 @@
 		230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultViewController.m; path = ../ResultViewController.m; sourceTree = "<group>"; };
 		230C6FC61A0E223B00C4D85C /* nightClub_main@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nightClub_main@2.png"; path = "../nightClub_main@2.png"; sourceTree = "<group>"; };
 		230C6FC81A0E246500C4D85C /* nightClub_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nightClub_main.png; sourceTree = "<group>"; };
+		230C6FCA1A0E270B00C4D85C /* musicPict.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicPict.png; sourceTree = "<group>"; };
 		2364D2261A0A2AD100DDBCE0 /* NightClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2364D2291A0A2AD100DDBCE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				230C6FC61A0E223B00C4D85C /* nightClub_main@2.png */,
+				230C6FCA1A0E270B00C4D85C /* musicPict.png */,
 				230C6FC81A0E246500C4D85C /* nightClub_main.png */,
 				2364D2311A0A2AD100DDBCE0 /* NightClub-Info.plist */,
 				2364D2321A0A2AD100DDBCE0 /* InfoPlist.strings */,
@@ -318,6 +321,7 @@
 				230C6FC91A0E246500C4D85C /* nightClub_main.png in Resources */,
 				230C6FB61A0D121C00C4D85C /* Jazz - Gaba Kulka - Emily.mp3 in Resources */,
 				230C6FB91A0D121C00C4D85C /* Rnb - Com Truise - Slow Peels.mp3 in Resources */,
+				230C6FCB1A0E270B00C4D85C /* musicPict.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
