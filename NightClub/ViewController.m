@@ -16,6 +16,14 @@
 
 - (void)viewDidLoad
 {
+    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nightClub_main.png"]];
+    
+    [self.view addSubview:backgroundImage];
+    [self.view sendSubviewToBack:backgroundImage];
+    
+   // UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nightClub_main.png"]];
+    //UIImageView *imageView = [[UIImageView alloc] initWithImage: backgroundImage];
+    //[self.view addSubview: imageView];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -28,7 +36,7 @@
 
 - (IBAction)startGame {
     
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     //[[MySingleton sharedInstance].people addObjectsFromArray:[userDefaults objectForKey:@"people"]];
     //NSLog(@"%lu", (unsigned long)[MySingleton sharedInstance].people.count);
     //people = [userDefaults objectForKey:@"people"];
