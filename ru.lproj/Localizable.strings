@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  NightClub
+
+  Created by itisioslab on 11.11.14.
+  Copyright (c) 2014 itisioslab. All rights reserved.
+*/
+"Error" = "Ошибка";
+"OK" = "OK";
+"Sorry entrance to our club with only %ld years of age" = "Извините, вход в наш клуб только с %ld лет";
+"Name field is empty" = "Поле имя не заполнено";
+"The club now has no visitors." = "В клубе сейчас нет посетителей.";
+"Music does not play." = "Музыка не играет.";
+"%@\n%@ dancing(%@)." = "%@\n%@ танцует(%@).";
+"%@\n%@ drinking Vodka in bar." = "%@\n%@ пьёт водку в баре.";
+"Pause" = "Пауза";
+"Play" = "Играть";
+"Next" = "Следующий";
+"Previous" = "Предыдущий";
+"View activity" = "Узнать кто чем занимается";
+"Welcome to our club" = "Добро пожаловать в наш клуб";
+"Genre: " = "Жанр: ";
+"Add new person" = "Добавление нового посетителя";
+"Start" = "Начать";
+"Choose what kind of music under your character can dance" = "Выберете под какую музыку ваш персонаж умеет танцевать";
+"Enter your name" = "Введите ваше имя";
+"Enter your age" = "Введите ваш возраст";
+"Done" = "Готово";

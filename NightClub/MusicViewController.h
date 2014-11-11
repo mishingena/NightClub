@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
-#import "ResultViewController.h"
+#import "Model.h"
 
 
-@interface MusicViewController : UIViewController {
-     AVAudioPlayer *audioPlayer;
-}
-
-@property (strong, nonatomic) NSArray *music;
+@interface MusicViewController : UIViewController
 
 - (IBAction)nextSong;
 - (IBAction)previousSong;
@@ -24,9 +19,9 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *nameOfMusic;
 @property (strong, nonatomic) IBOutlet UILabel *genre;
-
-- (NSString *)getGenre:(NSString *)str;
-- (NSString *)getName:(NSString *)str;
-
-
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+@property (weak, nonatomic) IBOutlet UIButton *previousButton;
+@property (weak, nonatomic) IBOutlet UIButton *checkActivity;
+@property (weak, nonatomic) IBOutlet UILabel *genreL;
 @end

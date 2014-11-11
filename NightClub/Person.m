@@ -9,12 +9,11 @@
 #import "Person.h"
 
 @implementation Person
-@synthesize name, age, skill;
+@synthesize name, age, movements;
 
-- (void)initWithName:(NSString *)_name Age:(NSInteger)_age Skill:(NSString *)_skill {
+- (void)initWithName:(NSString *)_name Age:(NSInteger)_age{
     name = _name;
     age = _age;
-    skill = _skill;
 }
 
 @end

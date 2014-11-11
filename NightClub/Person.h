@@ -12,8 +12,9 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (assign, nonatomic) NSInteger age;
-@property (strong,nonatomic) NSString *skill;
+@property (strong, nonatomic) NSString *movements;
 
-- (void)initWithName:(NSString *)name Age:(NSInteger)age Skill:(NSString *)skill;
+- (void)initWithName:(NSString *)_name Age:(NSInteger)_age;
+
 
 @end

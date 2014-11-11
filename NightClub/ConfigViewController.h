@@ -8,16 +8,18 @@
 
 #import "ViewController.h"
 #import "TableViewController.h"
-#import "MySingleton.h"
+#import "Singleton.h"
 #import "Person.h"
+#import "Model.h"
 
 @interface ConfigViewController : ViewController <UIAlertViewDelegate ,UIPickerViewDataSource, UIPickerViewDelegate>
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
-@property (strong, nonatomic) NSArray *dataSource;
 @property (nonatomic, retain) IBOutlet UITextField *nameTextField;
 @property (nonatomic, retain) IBOutlet UITextField *ageTextField;
+@property (weak, nonatomic) IBOutlet UILabel *editNewPerson;
+@property (weak, nonatomic) IBOutlet UITextView *textForPickerView;
+@property (weak, nonatomic) IBOutlet UIButton *doneKey;
 
-- (BOOL) check;
 - (IBAction)donePressed;
 
 @end

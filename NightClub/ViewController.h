@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MySingleton.h"
+#import "Singleton.h"
+#import "Model.h"
 
 
 @interface ViewController : UIViewController
 
 -(IBAction)startGame;
+
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UIButton *begin;
 
 @end

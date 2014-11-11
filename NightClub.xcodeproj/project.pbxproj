@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		230A66831A0A5C87004A0FB2 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230A66821A0A5C87004A0FB2 /* ConfigViewController.m */; };
-		230C6F951A0B629E00C4D85C /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6F941A0B629E00C4D85C /* MySingleton.m */; };
+		230C6F951A0B629E00C4D85C /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6F941A0B629E00C4D85C /* Singleton.m */; };
 		230C6F9E1A0B7ECA00C4D85C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6F9D1A0B7ECA00C4D85C /* DetailViewController.m */; };
 		230C6FA41A0BD04600C4D85C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6FA31A0BD04600C4D85C /* Person.m */; };
 		230C6FA61A0D0C4F00C4D85C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230C6FA51A0D0C4F00C4D85C /* AVFoundation.framework */; };
@@ -22,13 +22,12 @@
 		230C6FB81A0D121C00C4D85C /* Pop - Flora Matos - Pretin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FB01A0D121C00C4D85C /* Pop - Flora Matos - Pretin.mp3 */; };
 		230C6FB91A0D121C00C4D85C /* Rnb - Com Truise - Slow Peels.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FB11A0D121C00C4D85C /* Rnb - Com Truise - Slow Peels.mp3 */; };
 		230C6FC51A0E0DCE00C4D85C /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */; };
-		230C6FC71A0E223B00C4D85C /* nightClub_main@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FC61A0E223B00C4D85C /* nightClub_main@2.png */; };
+		230C6FC71A0E223B00C4D85C /* nightClub_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FC61A0E223B00C4D85C /* nightClub_main@2x.png */; };
 		230C6FC91A0E246500C4D85C /* nightClub_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FC81A0E246500C4D85C /* nightClub_main.png */; };
 		230C6FCB1A0E270B00C4D85C /* musicPict.png in Resources */ = {isa = PBXBuildFile; fileRef = 230C6FCA1A0E270B00C4D85C /* musicPict.png */; };
 		2364D22A1A0A2AD100DDBCE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D2291A0A2AD100DDBCE0 /* Foundation.framework */; };
 		2364D22C1A0A2AD100DDBCE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */; };
 		2364D22E1A0A2AD100DDBCE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */; };
-		2364D2341A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2364D2321A0A2AD100DDBCE0 /* InfoPlist.strings */; };
 		2364D2361A0A2AD100DDBCE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D2351A0A2AD100DDBCE0 /* main.m */; };
 		2364D23A1A0A2AD100DDBCE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D2391A0A2AD100DDBCE0 /* AppDelegate.m */; };
 		2364D23D1A0A2AD100DDBCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2364D23B1A0A2AD100DDBCE0 /* Main.storyboard */; };
@@ -40,6 +39,11 @@
 		2364D2531A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2364D2511A0A2AD100DDBCE0 /* InfoPlist.strings */; };
 		2364D2551A0A2AD100DDBCE0 /* NightClubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D2541A0A2AD100DDBCE0 /* NightClubTests.m */; };
 		2364D2601A0A303000DDBCE0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364D25F1A0A303000DDBCE0 /* TableViewController.m */; };
+		23EC60961A121F6A00C840F2 /* PersonWithRnbSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EC60951A121F6A00C840F2 /* PersonWithRnbSkill.m */; };
+		23EC60991A121FD900C840F2 /* PersonWithElectrodanceSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EC60981A121FD900C840F2 /* PersonWithElectrodanceSkill.m */; };
+		23EC609C1A121FFA00C840F2 /* PersonWithPopSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EC609B1A121FFA00C840F2 /* PersonWithPopSkill.m */; };
+		23EC60A01A122A9A00C840F2 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EC609F1A122A9A00C840F2 /* Model.m */; };
+		23EC60AF1A126F4E00C840F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23EC60B11A126F4E00C840F2 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +59,8 @@
 /* Begin PBXFileReference section */
 		230A66811A0A5C87004A0FB2 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		230A66821A0A5C87004A0FB2 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
-		230C6F931A0B629E00C4D85C /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySingleton.h; path = ../MySingleton.h; sourceTree = "<group>"; };
-		230C6F941A0B629E00C4D85C /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySingleton.m; path = ../MySingleton.m; sourceTree = "<group>"; };
+		230C6F931A0B629E00C4D85C /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = ../Singleton.h; sourceTree = "<group>"; };
+		230C6F941A0B629E00C4D85C /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Singleton.m; path = ../Singleton.m; sourceTree = "<group>"; };
 		230C6F9C1A0B7ECA00C4D85C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		230C6F9D1A0B7ECA00C4D85C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		230C6FA21A0BD04600C4D85C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -74,7 +78,7 @@
 		230C6FB11A0D121C00C4D85C /* Rnb - Com Truise - Slow Peels.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Rnb - Com Truise - Slow Peels.mp3"; path = "../Rnb - Com Truise - Slow Peels.mp3"; sourceTree = "<group>"; };
 		230C6FC31A0E0DCE00C4D85C /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultViewController.h; path = ../ResultViewController.h; sourceTree = "<group>"; };
 		230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultViewController.m; path = ../ResultViewController.m; sourceTree = "<group>"; };
-		230C6FC61A0E223B00C4D85C /* nightClub_main@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nightClub_main@2.png"; path = "../nightClub_main@2.png"; sourceTree = "<group>"; };
+		230C6FC61A0E223B00C4D85C /* nightClub_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nightClub_main@2x.png"; path = "../nightClub_main@2x.png"; sourceTree = "<group>"; };
 		230C6FC81A0E246500C4D85C /* nightClub_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nightClub_main.png; sourceTree = "<group>"; };
 		230C6FCA1A0E270B00C4D85C /* musicPict.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicPict.png; sourceTree = "<group>"; };
 		2364D2261A0A2AD100DDBCE0 /* NightClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +86,6 @@
 		2364D22B1A0A2AD100DDBCE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2364D22D1A0A2AD100DDBCE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2364D2311A0A2AD100DDBCE0 /* NightClub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NightClub-Info.plist"; sourceTree = "<group>"; };
-		2364D2331A0A2AD100DDBCE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2364D2351A0A2AD100DDBCE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2364D2371A0A2AD100DDBCE0 /* NightClub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NightClub-Prefix.pch"; sourceTree = "<group>"; };
 		2364D2381A0A2AD100DDBCE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,17 @@
 		2364D2541A0A2AD100DDBCE0 /* NightClubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NightClubTests.m; sourceTree = "<group>"; };
 		2364D25E1A0A303000DDBCE0 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		2364D25F1A0A303000DDBCE0 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		23EC60941A121F6A00C840F2 /* PersonWithRnbSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonWithRnbSkill.h; sourceTree = "<group>"; };
+		23EC60951A121F6A00C840F2 /* PersonWithRnbSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonWithRnbSkill.m; sourceTree = "<group>"; };
+		23EC60971A121FD900C840F2 /* PersonWithElectrodanceSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonWithElectrodanceSkill.h; sourceTree = "<group>"; };
+		23EC60981A121FD900C840F2 /* PersonWithElectrodanceSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonWithElectrodanceSkill.m; sourceTree = "<group>"; };
+		23EC609A1A121FFA00C840F2 /* PersonWithPopSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonWithPopSkill.h; sourceTree = "<group>"; };
+		23EC609B1A121FFA00C840F2 /* PersonWithPopSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonWithPopSkill.m; sourceTree = "<group>"; };
+		23EC609E1A122A9A00C840F2 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		23EC609F1A122A9A00C840F2 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		23EC60A71A126B1000C840F2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		23EC60B01A126F4E00C840F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23EC60B21A126F7A00C840F2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,22 +191,14 @@
 				2364D2381A0A2AD100DDBCE0 /* AppDelegate.h */,
 				2364D2391A0A2AD100DDBCE0 /* AppDelegate.m */,
 				2364D23B1A0A2AD100DDBCE0 /* Main.storyboard */,
-				230C6FA71A0D0CD900C4D85C /* MusicViewController.h */,
-				230C6FA81A0D0CD900C4D85C /* MusicViewController.m */,
-				230C6FC31A0E0DCE00C4D85C /* ResultViewController.h */,
-				230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */,
-				230C6FA21A0BD04600C4D85C /* Person.h */,
-				230C6FA31A0BD04600C4D85C /* Person.m */,
-				230A66811A0A5C87004A0FB2 /* ConfigViewController.h */,
-				230A66821A0A5C87004A0FB2 /* ConfigViewController.m */,
+				230C6F931A0B629E00C4D85C /* Singleton.h */,
+				230C6F941A0B629E00C4D85C /* Singleton.m */,
+				23EC609E1A122A9A00C840F2 /* Model.h */,
+				23EC609F1A122A9A00C840F2 /* Model.m */,
 				2364D23E1A0A2AD100DDBCE0 /* ViewController.h */,
 				2364D23F1A0A2AD100DDBCE0 /* ViewController.m */,
-				2364D25E1A0A303000DDBCE0 /* TableViewController.h */,
-				2364D25F1A0A303000DDBCE0 /* TableViewController.m */,
-				230C6F931A0B629E00C4D85C /* MySingleton.h */,
-				230C6F941A0B629E00C4D85C /* MySingleton.m */,
-				230C6F9C1A0B7ECA00C4D85C /* DetailViewController.h */,
-				230C6F9D1A0B7ECA00C4D85C /* DetailViewController.m */,
+				23EC60A11A122E0000C840F2 /* PeopleBranch */,
+				23EC60A21A12479B00C840F2 /* MusicBranch */,
 				2364D2411A0A2AD100DDBCE0 /* Images.xcassets */,
 				230C6FBD1A0DF89900C4D85C /* Sounds */,
 				2364D2301A0A2AD100DDBCE0 /* Supporting Files */,
@@ -203,11 +209,11 @@
 		2364D2301A0A2AD100DDBCE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				230C6FC61A0E223B00C4D85C /* nightClub_main@2.png */,
+				23EC60B11A126F4E00C840F2 /* Localizable.strings */,
+				230C6FC61A0E223B00C4D85C /* nightClub_main@2x.png */,
 				230C6FCA1A0E270B00C4D85C /* musicPict.png */,
 				230C6FC81A0E246500C4D85C /* nightClub_main.png */,
 				2364D2311A0A2AD100DDBCE0 /* NightClub-Info.plist */,
-				2364D2321A0A2AD100DDBCE0 /* InfoPlist.strings */,
 				2364D2351A0A2AD100DDBCE0 /* main.m */,
 				2364D2371A0A2AD100DDBCE0 /* NightClub-Prefix.pch */,
 			);
@@ -230,6 +236,46 @@
 				2364D2511A0A2AD100DDBCE0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23EC609D1A1226D300C840F2 /* PeopleWithSomeSkills */ = {
+			isa = PBXGroup;
+			children = (
+				230C6FA21A0BD04600C4D85C /* Person.h */,
+				230C6FA31A0BD04600C4D85C /* Person.m */,
+				23EC609A1A121FFA00C840F2 /* PersonWithPopSkill.h */,
+				23EC609B1A121FFA00C840F2 /* PersonWithPopSkill.m */,
+				23EC60971A121FD900C840F2 /* PersonWithElectrodanceSkill.h */,
+				23EC60981A121FD900C840F2 /* PersonWithElectrodanceSkill.m */,
+				23EC60941A121F6A00C840F2 /* PersonWithRnbSkill.h */,
+				23EC60951A121F6A00C840F2 /* PersonWithRnbSkill.m */,
+			);
+			name = PeopleWithSomeSkills;
+			sourceTree = "<group>";
+		};
+		23EC60A11A122E0000C840F2 /* PeopleBranch */ = {
+			isa = PBXGroup;
+			children = (
+				23EC609D1A1226D300C840F2 /* PeopleWithSomeSkills */,
+				2364D25E1A0A303000DDBCE0 /* TableViewController.h */,
+				2364D25F1A0A303000DDBCE0 /* TableViewController.m */,
+				230A66811A0A5C87004A0FB2 /* ConfigViewController.h */,
+				230A66821A0A5C87004A0FB2 /* ConfigViewController.m */,
+				230C6F9C1A0B7ECA00C4D85C /* DetailViewController.h */,
+				230C6F9D1A0B7ECA00C4D85C /* DetailViewController.m */,
+			);
+			name = PeopleBranch;
+			sourceTree = "<group>";
+		};
+		23EC60A21A12479B00C840F2 /* MusicBranch */ = {
+			isa = PBXGroup;
+			children = (
+				230C6FA71A0D0CD900C4D85C /* MusicViewController.h */,
+				230C6FA81A0D0CD900C4D85C /* MusicViewController.m */,
+				230C6FC31A0E0DCE00C4D85C /* ResultViewController.h */,
+				230C6FC41A0E0DCE00C4D85C /* ResultViewController.m */,
+			);
+			name = MusicBranch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +337,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 2364D21D1A0A2AD100DDBCE0;
 			productRefGroup = 2364D2271A0A2AD100DDBCE0 /* Products */;
@@ -309,15 +356,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2364D2421A0A2AD100DDBCE0 /* Images.xcassets in Resources */,
-				230C6FC71A0E223B00C4D85C /* nightClub_main@2.png in Resources */,
+				230C6FC71A0E223B00C4D85C /* nightClub_main@2x.png in Resources */,
 				230C6FB31A0D121C00C4D85C /* Electrodance - Death Grips - Lord of the Game.mp3 in Resources */,
 				230C6FB51A0D121C00C4D85C /* Hip-Hop - Death Grips - Spread Eagle Cross the Block.mp3 in Resources */,
-				2364D2341A0A2AD100DDBCE0 /* InfoPlist.strings in Resources */,
 				2364D23D1A0A2AD100DDBCE0 /* Main.storyboard in Resources */,
 				230C6FB81A0D121C00C4D85C /* Pop - Flora Matos - Pretin.mp3 in Resources */,
 				230C6FB41A0D121C00C4D85C /* Electrodance - The Echelon Effect - Your First Light My Eventide.mp3 in Resources */,
 				230C6FB71A0D121C00C4D85C /* Pop - Blackbird Blackbird - Left To Hurt.mp3 in Resources */,
 				230C6FB21A0D121C00C4D85C /* Blues - Velhas Virgens - Essa tal de tequila.mp3 in Resources */,
+				23EC60AF1A126F4E00C840F2 /* Localizable.strings in Resources */,
 				230C6FC91A0E246500C4D85C /* nightClub_main.png in Resources */,
 				230C6FB61A0D121C00C4D85C /* Jazz - Gaba Kulka - Emily.mp3 in Resources */,
 				230C6FB91A0D121C00C4D85C /* Rnb - Com Truise - Slow Peels.mp3 in Resources */,
@@ -341,13 +388,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2364D2401A0A2AD100DDBCE0 /* ViewController.m in Sources */,
-				230C6F951A0B629E00C4D85C /* MySingleton.m in Sources */,
+				230C6F951A0B629E00C4D85C /* Singleton.m in Sources */,
 				230C6FA41A0BD04600C4D85C /* Person.m in Sources */,
+				23EC60991A121FD900C840F2 /* PersonWithElectrodanceSkill.m in Sources */,
 				230C6FC51A0E0DCE00C4D85C /* ResultViewController.m in Sources */,
 				230C6FA91A0D0CD900C4D85C /* MusicViewController.m in Sources */,
+				23EC60961A121F6A00C840F2 /* PersonWithRnbSkill.m in Sources */,
 				2364D23A1A0A2AD100DDBCE0 /* AppDelegate.m in Sources */,
 				2364D2361A0A2AD100DDBCE0 /* main.m in Sources */,
+				23EC609C1A121FFA00C840F2 /* PersonWithPopSkill.m in Sources */,
 				230A66831A0A5C87004A0FB2 /* ConfigViewController.m in Sources */,
+				23EC60A01A122A9A00C840F2 /* Model.m in Sources */,
 				2364D2601A0A303000DDBCE0 /* TableViewController.m in Sources */,
 				230C6F9E1A0B7ECA00C4D85C /* DetailViewController.m in Sources */,
 			);
@@ -372,18 +423,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2364D2321A0A2AD100DDBCE0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2364D2331A0A2AD100DDBCE0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		2364D23B1A0A2AD100DDBCE0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2364D23C1A0A2AD100DDBCE0 /* Base */,
+				23EC60A71A126B1000C840F2 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -394,6 +438,16 @@
 				2364D2521A0A2AD100DDBCE0 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		23EC60B11A126F4E00C840F2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23EC60B01A126F4E00C840F2 /* en */,
+				23EC60B21A126F7A00C840F2 /* ru */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

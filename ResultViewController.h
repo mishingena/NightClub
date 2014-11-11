@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Person.h"
-#import "MySingleton.h"
+#import "Singleton.h"
+#import "Model.h"
 
 @interface ResultViewController : UIViewController
 
-@property (assign, nonatomic) BOOL isNowPlay;
-@property (strong, nonatomic) NSString *genre;
 @property (weak, nonatomic) IBOutlet UITextView *resultText;
 
 @end

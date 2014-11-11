@@ -1,0 +1,8 @@
+/* Localized versions of Info.plist keys */
+
+"Error" = "Ошибка";
+"OK" = "OK";
+"Sorry entrance to our club with only %ld years of age" = "Извините, вход в наш клуб только с %ld лет";
+"Name field is empty" = "Поле имя не заполнено";
+"The club now has no visitors." = "В клубе сейчас нет посетителей.";
+"Music does not play." = "Музыка не играет.";

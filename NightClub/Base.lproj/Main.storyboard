@@ -37,6 +37,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="begin" destination="jGe-1v-aUl" id="Tbn-t1-f9p"/>
+                        <outlet property="title" destination="3OE-b7-96T" id="Ti4-x0-fL9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +99,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOP-Z0-QgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="-206"/>
+            <point key="canvasLocation" x="1523" y="-450"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="T3W-d7-aWi">
@@ -159,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaU-D4-dRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063" y="-536"/>
+            <point key="canvasLocation" x="2057" y="-796"/>
         </scene>
         <!--Config View Controller-->
         <scene sceneID="IGL-BG-VXj">
@@ -195,7 +199,6 @@
                                 <rect key="frame" x="-20" y="181" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="Kcv-05-tJA" id="IaR-q8-HrX"/>
                                     <outlet property="delegate" destination="Kcv-05-tJA" id="Dz5-qI-Ilf"/>
                                 </connections>
                             </pickerView>
@@ -225,13 +228,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ageTextField" destination="Fyv-l1-KrS" id="4uF-4F-TDU"/>
+                        <outlet property="doneKey" destination="5VI-Zh-YbG" id="Rq1-TQ-EDN"/>
+                        <outlet property="editNewPerson" destination="0do-pC-B0A" id="qio-BL-8UH"/>
                         <outlet property="nameTextField" destination="Eim-NR-h9H" id="5E6-XE-etB"/>
                         <outlet property="pickerView" destination="Rcs-Cd-OjG" id="ttH-CO-oMY"/>
+                        <outlet property="textForPickerView" destination="yP8-QF-qun" id="yWQ-0E-Tfd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cn-kk-Eks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2589" y="163"/>
+            <point key="canvasLocation" x="2057" y="-131"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Zta-F1-i09">
@@ -266,19 +272,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQu-Nj-9sH">
-                                <rect key="frame" x="138" y="209" width="45" height="30"/>
+                                <rect key="frame" x="109" y="209" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startStop:" destination="XJC-3w-JVf" eventType="touchUpInside" id="m4f-ca-vRE"/>
+                                    <action selector="startStop:" destination="XJC-3w-JVf" eventType="touchUpInside" id="wZa-mt-Z5q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NJ-zR-Ece">
-                                <rect key="frame" x="224" y="209" width="32" height="30"/>
+                                <rect key="frame" x="216" y="209" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -286,8 +295,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43t-De-Mim">
-                                <rect key="frame" x="41" y="209" width="59" height="30"/>
+                                <rect key="frame" x="20" y="209" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Previous">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -302,8 +312,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKP-4o-Ecb">
-                                <rect key="frame" x="20" y="76" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKP-4o-Ecb">
+                                <rect key="frame" x="166" y="77" width="134" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -327,13 +337,25 @@
                                     <segue destination="37g-YC-7t9" kind="push" id="Lx2-tT-zij"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Жанр:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6e-ux-wdh">
+                                <rect key="frame" x="96" y="77" width="62" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="l6Z-VE-bZ4"/>
                     <connections>
-                        <outlet property="genre" destination="wKP-4o-Ecb" id="57O-Gu-BDv"/>
+                        <outlet property="checkActivity" destination="IZD-Ca-ozZ" id="4LR-vy-gq3"/>
+                        <outlet property="genre" destination="wKP-4o-Ecb" id="kz2-SF-psT"/>
+                        <outlet property="genreL" destination="n6e-ux-wdh" id="fnm-Fu-UpK"/>
                         <outlet property="nameOfMusic" destination="Yuh-8P-hLt" id="K5a-yE-Jcy"/>
+                        <outlet property="nextButton" destination="4NJ-zR-Ece" id="NB8-t2-pv5"/>
+                        <outlet property="playButton" destination="eQu-Nj-9sH" id="EmW-c0-YWI"/>
+                        <outlet property="previousButton" destination="43t-De-Mim" id="Uin-ra-kRy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tN7-mD-vW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -388,7 +410,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEF-Xe-x7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="-206"/>
+            <point key="canvasLocation" x="1070" y="-450"/>
         </scene>
         <!--Navigation Controller - Music-->
         <scene sceneID="E0k-SM-S8X">

@@ -1,0 +1,72 @@
+
+/* Class = "IBUILabel"; text = "Добавление нового посетителя "; ObjectID = "0do-pC-B0A"; */
+"0do-pC-B0A.text" = "Добавление нового посетителя ";
+
+/* Class = "IBUILabel"; text = "Умею танцевать"; ObjectID = "1d6-hG-HHt"; */
+"1d6-hG-HHt.text" = "Умею танцевать";
+
+/* Class = "IBUILabel"; text = "Добро пожаловать в наш клуб"; ObjectID = "3OE-b7-96T"; */
+"3OE-b7-96T.text" = "Добро пожаловать в наш клуб";
+
+/* Class = "IBUIButton"; normalTitle = "Previous"; ObjectID = "43t-De-Mim"; */
+"43t-De-Mim.normalTitle" = "Previous";
+
+/* Class = "IBUIButton"; normalTitle = "Next"; ObjectID = "4NJ-zR-Ece"; */
+"4NJ-zR-Ece.normalTitle" = "Next";
+
+/* Class = "IBUIButton"; normalTitle = "Готово"; ObjectID = "5VI-Zh-YbG"; */
+"5VI-Zh-YbG.normalTitle" = "Готово";
+
+/* Class = "IBUILabel"; text = "Age"; ObjectID = "E9t-0U-3oM"; */
+"E9t-0U-3oM.text" = "Age";
+
+/* Class = "IBUITextField"; placeholder = "Введите ваше имя"; ObjectID = "Eim-NR-h9H"; */
+"Eim-NR-h9H.placeholder" = "Введите ваше имя";
+
+/* Class = "IBUITextField"; placeholder = "Возраст"; ObjectID = "Fyv-l1-KrS"; */
+"Fyv-l1-KrS.placeholder" = "Возраст";
+
+/* Class = "IBUITabBarItem"; title = "People"; ObjectID = "HQC-1W-6Zz"; */
+"HQC-1W-6Zz.title" = "People";
+
+/* Class = "IBUIButton"; normalTitle = "Узнать кто чем занимается"; ObjectID = "IZD-Ca-ozZ"; */
+"IZD-Ca-ozZ.normalTitle" = "Узнать кто чем занимается";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "NNl-YQ-Cv0"; */
+"NNl-YQ-Cv0.text" = "Title";
+
+/* Class = "IBUILabel"; text = "Возраст"; ObjectID = "Nb3-d2-W9W"; */
+"Nb3-d2-W9W.text" = "Возраст";
+
+/* Class = "IBUILabel"; text = "Song"; ObjectID = "Yuh-8P-hLt"; */
+"Yuh-8P-hLt.text" = "Song";
+
+/* Class = "IBUILabel"; text = "None"; ObjectID = "a3D-Jb-Mcu"; */
+"a3D-Jb-Mcu.text" = "None";
+
+/* Class = "IBUIButton"; normalTitle = "Play"; ObjectID = "eQu-Nj-9sH"; */
+"eQu-Nj-9sH.normalTitle" = "Play";
+
+/* Class = "IBUIButton"; normalTitle = "+"; ObjectID = "iKJ-Sp-xt2"; */
+"iKJ-Sp-xt2.normalTitle" = "+";
+
+/* Class = "IBUIButton"; normalTitle = "Начать"; ObjectID = "jGe-1v-aUl"; */
+"jGe-1v-aUl.normalTitle" = "Начать";
+
+/* Class = "IBUILabel"; text = "Имя"; ObjectID = "jrd-ij-QFy"; */
+"jrd-ij-QFy.text" = "Имя";
+
+/* Class = "IBUITabBarItem"; title = "Music"; ObjectID = "k2B-I1-yGh"; */
+"k2B-I1-yGh.title" = "Music";
+
+/* Class = "IBUILabel"; text = "Жанр:"; ObjectID = "n6e-ux-wdh"; */
+"n6e-ux-wdh.text" = "Жанр:";
+
+/* Class = "IBUILabel"; text = "Genre"; ObjectID = "wKP-4o-Ecb"; */
+"wKP-4o-Ecb.text" = "Genre";
+
+/* Class = "IBUILabel"; text = "Name"; ObjectID = "wcv-XT-ip6"; */
+"wcv-XT-ip6.text" = "Name";
+
+/* Class = "IBUITextView"; text = "Выберете под какую музыку ваш персонаж умеет танцевать"; ObjectID = "yP8-QF-qun"; */
+"yP8-QF-qun.text" = "Выберете под какую музыку ваш персонаж умеет танцевать";

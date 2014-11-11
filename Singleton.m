@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 itisioslab. All rights reserved.
 //
 
-#import "MySingleton.h"
+#import "Singleton.h"
 
-static MySingleton* _sharedInstance;
+static Singleton* _sharedInstance;
 
-@implementation MySingleton
+@implementation Singleton
 
 @synthesize people;
 
@@ -23,13 +23,13 @@ static MySingleton* _sharedInstance;
     return self;
 }
 
-+ (MySingleton *) sharedInstance
++ (Singleton *) sharedInstance
 {
     @synchronized(self)
     {
         if (!_sharedInstance)
         {
-            _sharedInstance = [[MySingleton alloc] init];
+            _sharedInstance = [[Singleton alloc] init];
             
         }
     }

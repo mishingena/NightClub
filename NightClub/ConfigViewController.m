@@ -7,6 +7,7 @@
 //
 
 #import "ConfigViewController.h"
+#import "Model.h"
 
 @interface ConfigViewController ()
 
@@ -15,40 +16,25 @@
 
 @implementation ConfigViewController
 @synthesize pickerView;
-@synthesize dataSource;
 @synthesize ageTextField;
-@synthesize nameTextField;
+@synthesize nameTextField, editNewPerson, textForPickerView, doneKey;
 
-NSString *skill;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.dataSource = [NSArray arrayWithObjects:
-                       @"Rnb",
-                       @"Electrodance",
-                       @"Pop",
-                       @"None",
-                       nil];
+    editNewPerson.text = NSLocalizedString(@"Add new person", nil);
+    textForPickerView.text = NSLocalizedString(@"Choose what kind of music under your character can dance", nil);
+    nameTextField.placeholder = NSLocalizedString(@"Enter your name", nil);
+    ageTextField.placeholder = NSLocalizedString(@"Enter your age", nil);
+    [doneKey setTitle:NSLocalizedString(@"Done", nil) forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -64,61 +50,26 @@ NSString *skill;
 - (NSInteger)pickerView:(UIPickerView *)thePickerView
 numberOfRowsInComponent:(NSInteger)component
 {
-    return dataSource.count;
+    return [Model getEnumCount];
 }
 
 - (NSString *)pickerView:(UIPickerView *)thePickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component
 {
-    skill = [dataSource objectAtIndex:row];
-    return [dataSource objectAtIndex:row];
+    [Model setCurrentSkill:[Model getSkillAtIndex:row]];
+    return [Model getStringValueOfSkillAtIndex:row];
 }
 
--(BOOL) check {
-    if (![nameTextField.text isEqual:@"" ] && ![ageTextField.text isEqual:@""] && [ageTextField.text integerValue] > 17) return YES;
-    if ([nameTextField.text isEqual:@"" ] || [ageTextField.text isEqual:@""]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ошибка"
-                                                        message:[NSString stringWithFormat:@"Не все поля заполнены"]
-                                                       delegate:self
-                                              cancelButtonTitle:@"ОК"
-                                              otherButtonTitles:nil];
-        
-        [alert show];
-    } else {
-        if ([ageTextField.text integerValue] < 18) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ошибка"
-                                                        message:[NSString stringWithFormat:@"Извините, вход в наш клуб только с 18 лет"]
-                                                       delegate:self
-                                              cancelButtonTitle:@"ОК"
-                                              otherButtonTitles:nil];
-        
-        [alert show];
-        }
-    }
-    return NO;
-}
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
- //   [self donePressed];
 }
 
 - (IBAction)donePressed {
-    
-    if ([self check]) {
-        Person *person = [[Person alloc] init];
-        [person initWithName:nameTextField.text Age:[ageTextField.text integerValue] Skill:skill];
-        [[MySingleton sharedInstance].people addObject:person];
-        //NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        NSArray *people = [[NSArray alloc] initWithArray:[MySingleton sharedInstance].people];
-//        [[NSUserDefaults standardUserDefaults] setObject:people forKey:@"people"];
-        //[[NSUserDefaults standardUserDefaults] setObject:[MySingleton sharedInstance].people forKey:@"people"];
-        //[userDefaults setObject:[MySingleton sharedInstance].people forKey:@"people"];
-        
+    if ([Model checkNameField:nameTextField.text] && [Model checkAge:[ageTextField.text integerValue]]) {
+        [Model addNewPersonWithName:nameTextField.text Age:[ageTextField.text integerValue]];
         [self.navigationController popViewControllerAnimated:YES];
     }
-    
-    
 }
 
 

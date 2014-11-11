@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Person.h"
+#import "Model.h"
 
 @interface DetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *MyName;

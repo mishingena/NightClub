@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MySingleton : NSObject
+@interface Singleton : NSObject
 
 @property NSMutableArray *people;
 
-+ (MySingleton *) sharedInstance;
++ (Singleton *) sharedInstance;
 
 @end
